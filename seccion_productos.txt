@@ -1,0 +1,85 @@
+        <!-- SECCIÓN PRODUCTOS / PROMOS -->
+        <section class="py-5 my-5" id="productos">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6 text-cozy-coffee">Promos & Combos</h2>
+                    <p class="text-secondary lead">Elegí tu combinación favorita para disfrutar en el local o llevar</p>
+                </div>
+
+                <div class="row g-4 align-items-stretch">
+                    
+                    <!-- Promo 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-cozy-cream">
+                            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" 
+                                 class="card-img-top object-fit-cover" style="height: 200px;" alt="Combo Mañanero - Café y Medialunas">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="h5 card-title fw-bold text-cozy-coffee text-uppercase mb-1">Combo Mañanero</h3>
+                                <div class="my-3">
+                                    <span class="display-6 fw-bold text-dark">$220</span>
+                                </div>
+                                <p class="card-text text-secondary small mb-4">El clásico infalible para empezar el día con la energía justa.</p>
+                                <ul class="list-unstyled text-start mb-4 flex-grow-1 small">
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> Café Latte o Espresso doble</li>
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> 2 Medialunas horneadas hoy</li>
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> Vasito de jugo de naranja natural</li>
+                                </ul>
+                                <div class="d-grid mt-auto">
+                                    <a href="#cafeterias" class="btn btn-outline-cozy fw-semibold rounded-pill">Pedir en local</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promo 2 (Destacada) -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-cozy-cream card-cozy-highlight position-relative">
+                            <span class="position-absolute top-0 start-50 translate-middle badge badge-cozy px-3 py-2 fs-6 rounded-pill shadow-sm" style="margin-top: 15px; z-index: 2;">
+                                Recomendado de la Casa
+                            </span>
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" 
+                                 class="card-img-top object-fit-cover" style="height: 200px;" alt="Especialidad Astro - Flat White y Torta">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="h5 card-title fw-bold text-cozy-coffee text-uppercase mb-1">Especialidad Astro</h3>
+                                <div class="my-3">
+                                    <span class="display-6 fw-bold text-dark">$350</span>
+                                </div>
+                                <p class="card-text text-secondary small mb-4">Nuestra estrella de la casa creada para disfrutar sin apuros.</p>
+                                <ul class="list-unstyled text-start mb-4 flex-grow-1 small">
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> Flat White con leche a elección</li>
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> Porción de Torta Artesanal</li>
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> Agua mineral de cortesía</li>
+                                </ul>
+                                <div class="d-grid mt-auto">
+                                    <a href="#cafeterias" class="btn btn-cozy fw-semibold rounded-pill shadow-sm">Pedir en local</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promo 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-cozy-cream">
+                            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80" 
+                                 class="card-img-top object-fit-cover" style="height: 200px;" alt="Pack Dúo Trabajo - 2 Cafés y Sándwiches">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="h5 card-title fw-bold text-cozy-coffee text-uppercase mb-1">Pack Dúo / Break</h3>
+                                <div class="my-3">
+                                    <span class="display-6 fw-bold text-dark">$580</span>
+                                </div>
+                                <p class="card-text text-secondary small mb-4">La pausa perfecta para compartir durante una reunión o charla.</p>
+                                <ul class="list-unstyled text-start mb-4 flex-grow-1 small">
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> 2 Cafés a elección (Cualquier tamaño)</li>
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> 2 Sándwiches calientes o Bagels</li>
+                                    <li class="mb-2"><i class="bi bi-cup-hot-fill text-cozy-coffee me-2"></i> 2 Cookies caseras de avena</li>
+                                </ul>
+                                <div class="d-grid mt-auto">
+                                    <a href="#cafeterias" class="btn btn-outline-cozy fw-semibold rounded-pill">Pedir en local</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>

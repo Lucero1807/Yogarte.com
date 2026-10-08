@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YOGARTE | Arte, Yoga y Música</title>
+    <link rel="shortcut icon" href="WhatsApp Image 2026-08-29 at 12.24.06.jpeg" type="image/jpeg">
+    
+    <!-- Bootstrap 5 CSS (Obligatorio para el carrusel) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fibonacchi.css">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header class="encabezado">
+        <div class="logo">
+            YOGA<span>RTE</span>
+        </div>
+
+        <div class="logo">
+            <a href="#inicio">
+                <img src="WhatsApp Image 2026-08-29 at 12.24.06.jpeg" alt="Logo Fibonacci">
+            </a>
+        </div>
+
+        <nav class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <!-- PROGRAMAS -->
+
+                <li class="dropdown">
+
+                    <a href="#programas">
+                        Programas
+                        <span>▼</span>
+                    </a>
+
+                    <ul class="submenu">
+
+                        <li>
+                            <a href="#yoga">Yoga</a>
+                        </li>
+
+                        <li>
+                            <a href="#musica">Música</a>
+                        </li>
+
+                        <li>
+                            <a href="#arte">Arte</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- OBRAS -->
+
+                <li class="dropdown">
+
+                    <a href="#obras">
+                        Obras
+                        <span>▼</span>
+                    </a>
+
+                    <ul class="submenu">
+
+                        <li>
+                            <a href="#eventos">Eventos</a>
+                        </li>
+
+                        <li>
+                            <a href="#exposicion">Exposición</a>
+                        </li>
+
+                        <li>
+                            <a href="#comunidad">Comunidad</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#galeria">Galería</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- BOTÓN MENÚ MÓVIL -->
+
+        <button class="menu-movil" id="botonMenu">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         INICIO
+    ========================== -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-contenido">
+
+                <div class="hero-texto">
+
+                    <p class="subtitulo">
+                        ARTE · YOGA · MÚSICA
+                    </p>
+
+                    <h1>
+                        Un espacio para
+                        <span>crear, aprender y compartir</span>
+                    </h1>
+
+                    <p>
+                        Descubrí nuestros programas, actividades,
+                        obras y propuestas culturales.
+                    </p>
+
+                    <a href="#programas" class="boton">
+                        Ver programas
+                    </a>
+
+                </div>
+
+                <div class="hero-logo">
+
+                    <div class="circulo-logo">
+
+                        <img
+                            src="logo.jpg.jpg"
+                            alt="Logo Fibonacci"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROGRAMAS
+        ========================== -->
+
+        <section id="programas" class="seccion programas">
+
+            <div class="titulo-seccion">
+
+                <p>DESCUBRÍ</p>
+
+                <h2>
+                    Nuestros programas
+                </h2>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="tarjetas">
+
+
+                <!-- YOGA -->
+
+                <article
+                    id="yoga"
+                    class="tarjeta"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="WhatsApp Image 2026-08-29 at 12.24.06 (2).jpeg"
+                            alt="Clase de Yoga"
+                        >
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Yoga</h3>
+
+                        <p>
+                            Espacios para conectar con el cuerpo,
+                            la respiración y el bienestar.
+                        </p>
+
+                        <a href="#contacto">
+                            Más información →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MÚSICA -->
+
+                <article
+                    id="musica"
+                    class="tarjeta"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+                            alt="Música"
+                        >
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Música</h3>
+
+                        <p>
+                            Actividades musicales y espacios
+                            para aprender y compartir.
+                        </p>
+
+                        <a href="#contacto">
+                            Más información →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ARTE -->
+
+                <article
+                    id="arte"
+                    class="tarjeta"
+                >
+
+                    <div class="imagen-tarjeta">
+
+                        <img
+                            src="WhatsApp Image 2026-08-27 at 23.06.31 (3).jpeg"
+                            alt="Arte"
+                        >
+
+                    </div>
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Arte</h3>
+
+                        <p>
+                            Propuestas artísticas, creación,
+                            expresión y experimentación.
+                        </p>
+
+                        <a href="#contacto">
+                            Más información →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OBRAS
+        ========================== -->
+
+        <section id="obras" class="seccion obras">
+
+            <div class="titulo-seccion">
+
+                <p>PROPUESTAS</p>
+
+                <h2>
+                    Obras y actividades
+                </h2>
+
+                <span></span>
+
+            </div>
+
+            <div class="obras-grid">
+
+                <article id="eventos">
+
+                    <div class="icono">
+                        🎭
+                    </div>
+
+                    <h3>Eventos</h3>
+
+                    <div class="eventos-imagenes">
+
+                        <img
+                            src="WhatsApp Image 2026-09-15 at 20.20.46.jpeg"
+                            alt="Evento 1"
+                        >
+
+                        <img
+                            src="WhatsApp Image 2026-09-15 at 20.20.47.jpeg"
+                            alt="Evento 2"
+                        >
+
+                    </div>
+
+                    <p>
+                        Actividades y encuentros especiales.
+                    </p>
+
+                </article>
+
+
+                <article id="exposicion">
+
+                    <div class="icono">
+                        🖼️
+                    </div>
+
+                    <h3>Exposición</h3>
+
+                    <p>
+                        Espacios para presentar diferentes
+                        propuestas artísticas.
+                    </p>
+
+                </article>
+
+
+                <!-- CARRUSEL EN LA SECCIÓN DE COMUNIDAD -->
+                <article id="comunidad">
+
+                    <div class="icono">
+                        🤝
+                    </div>
+
+                    <h3>Comunidad</h3>
+
+                    <p>
+                        Actividades pensadas para compartir y construir comunidad.
+                    </p>
+
+                    <!-- Carrusel de Comunidad -->
+                    <div id="carruselComunidad" class="carousel slide my-3" data-bs-ride="carousel" data-bs-interval="3000">
+
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carruselComunidad" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carruselComunidad" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carruselComunidad" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <!-- Diapositivas / Imágenes -->
+                        <div class="carousel-inner rounded overflow-hidden">
+
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="WhatsApp Image 2026-08-29 at 12.24.06 (2).jpeg"
+                                    class="d-block w-100 object-fit-cover" style="height: 250px;" alt="Encuentro de comunidad 1">
+                                <div class="carousel-caption d-none d-sm-block bg-dark bg-opacity-50 rounded p-1">
+                                    <h5 class="m-0 fs-6 fw-bold">Encuentros Grupales</h5>
+                                    <p class="m-0 text-white-50" style="font-size: 0.8rem;">Espacios de diálogo y práctica compartida.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="WhatsApp Image 2026-08-29 at 12.24.06 (3).jpeg"
+                                    class="d-block w-100 object-fit-cover" style="height: 250px;" alt="Encuentro de comunidad 2">
+                                <div class="carousel-caption d-none d-sm-block bg-dark bg-opacity-50 rounded p-1">
+                                    <h5 class="m-0 fs-6 fw-bold">Talleres Colaborativos</h5>
+                                    <p class="m-0 text-white-50" style="font-size: 0.8rem;">Creación en conjunto para todas las edades.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <img src="WhatsApp Image 2026-08-29 at 12.24.07.jpeg"
+                                    class="d-block w-100 object-fit-cover" style="height: 250px;" alt="Encuentro de comunidad 3">
+                                <div class="carousel-caption d-none d-sm-block bg-dark bg-opacity-50 rounded p-1">
+                                    <h5 class="m-0 fs-6 fw-bold">Jornadas Abiertas</h5>
+                                    <p class="m-0 text-white-50" style="font-size: 0.8rem;">Compartiendo arte y bienestar al aire libre.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Botones Anterior / Siguiente -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselComunidad" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselComunidad" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section id="nosotros" class="seccion nosotros">
+
+            <div class="nosotros-contenido">
+                <div class="nosotros-imagen">
+                    <div class="imagen-placeholder ">
+
+                        <span><img src="WhatsApp Image 2026-08-29 at 12.24.06.jpeg" alt="Logo Yogarte"></span>
+
+                    </div>
+                </div>
+
+
+                <div class="nosotros-texto">
+
+                    <p class="etiqueta">
+                        QUIÉNES SOMOS
+                    </p>
+
+                    <h2>
+                        Nosotros
+                    </h2>
+
+                    <p>
+                        YOGARTE es un espacio dedicado al desarrollo de actividades
+                        culturales, artísticas y educativas.
+                    </p>
+
+                    <p>
+                        Nuestro objetivo es generar experiencias que permitan a las
+                        personas aprender, expresarse y compartir conocimientos.
+                    </p>
+                    <h3>Nuestro equipo</h3>
+                    <p>Conoce el Currículum y la de quienes forman parte de el.</p>
+
+                    <a href="#contacto" class="boton">Ver currículum</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALERÍA
+        ========================== -->
+
+        <section id="galeria" class="seccion galeria">
+
+            <div class="titulo-seccion">
+
+                <p>EXPERIENCIAS</p>
+
+                <h2>
+                    Galería
+                </h2>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="galeria-grid">
+
+                <div class="galeria-item">
+                    <img
+                        src="WhatsApp Image 2026-08-29 at 12.24.06 (2).jpeg"
+                        alt="Actividad"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f"
+                        alt="Clase"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="WhatsApp Image 2026-08-29 at 12.24.06 (3).jpeg"
+                        alt="Actividad artística"
+                    >
+                </div>
+
+                <div class="galeria-item">
+                    <img
+                        src="WhatsApp Image 2026-08-29 at 12.24.07.jpeg"
+                        alt="Evento"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="video">
+
+                <h3>
+                    Videos de nuestras clases
+                </h3>
+
+                <video controls>
+
+                    <source
+                        src="videos/clase.mp4"
+                        type="video/mp4"
+                    >
+
+                    Tu navegador no soporta videos.
+
+                </video>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section id="contacto" class="seccion contacto">
+
+            <div class="titulo-seccion">
+
+                <p>ESTAMOS EN CONTACTO</p>
+
+                <h2>
+                    Contacto
+                </h2>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="contacto-contenido">
+
+
+                <div class="contacto-info">
+
+                    <h3>
+                        Seguinos en nuestras redes
+                    </h3>
+
+                    <p>
+                        Encontranos en nuestras redes sociales
+                        y mantenete al día con nuestras
+                        actividades.
+                    </p>
+
+
+                    <div class="redes">
+
+                        <a
+                            href="https://www.instagram.com/espacio_yogarte?igsi=MWo2NWF6cjA0eG41Zw=="
+                            target="_blank"
+                            class="red instagram"
+                        >
+                            Instagram
+                        </a>
+
+
+                        <a
+                            href="mailto:yogarte.conexion@gmail.com"
+                            class="red email"
+                        >
+                            Email
+                        </a>
+
+
+                        <a
+                            href="https://wa.me/59899862875"
+                            target="_blank"
+                            class="red whatsapp"
+                        >
+                            WhatsApp
+                        </a>
+
+
+                        <a
+                            href="https://www.tiktok.com/@yogarte.conexion"
+                            target="_blank"
+                            class="red tiktok"
+                        >
+                            TikTok
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <form
+                    id="formularioContacto"
+                    class="formulario"
+                >
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Nombre"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    >
+
+                    <textarea
+                        id="mensaje"
+                        placeholder="Escribí tu mensaje..."
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="boton"
+                    >
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <img
+                src="WhatsApp Image 2026-08-29 at 12.24.06.jpeg"
+                alt="Logo Fibonacci"
+            >
+
+        </div>
+
+
+        <p>
+            Arte · Yoga · Música
+        </p>
+
+
+        <div class="footer-redes">
+
+            <a
+                href="https://www.instagram.com/espacio_yogarte?igsi=MWo2NWF6cjA0eG41Zw=="
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://wa.me/59899862875"
+                target="_blank"
+            >
+                WhatsApp
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@yogarte.conexion"
+                target="_blank"
+            >
+                TikTok
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 YOGARTE. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap 5 JS (Obligatorio para la animación y botones del carrusel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
