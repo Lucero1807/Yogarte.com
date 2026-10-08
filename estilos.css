@@ -246,10 +246,12 @@ img {
         10px 10px 30px rgba(0,0,0,0.15),
         inset 0 0 30px rgba(255,255,255,0.7);
 }
+img { max-width: 100%;
+     height: auto;}
 
 .circulo-logo img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 70%;
     object-fit: cover;
 }
