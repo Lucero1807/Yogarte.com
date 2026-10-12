@@ -879,3 +879,19 @@ footer {
     }
 
 }
+.curriculum-imagen {
+    display: none;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.curriculum-imagen.visible {
+    display: block;
+}
+
+#botonCurriculum {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+}
