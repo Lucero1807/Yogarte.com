@@ -125,5 +125,24 @@ elementos.forEach(function (elemento) {
         "opacity 0.6s ease, transform 0.6s ease";
 
     observador.observe(elemento);
+}
+ /* ==================================================
+   MOSTRAR / OCULTAR CURRÍCULUM
+================================================== */
+
+const botonCurriculum = document.getElementById("botonCurriculum");
+const imagenCurriculum = document.getElementById("imagenCurriculum");
+
+botonCurriculum.addEventListener("click", function () {
+
+    imagenCurriculum.classList.toggle("visible");
+
+    if (imagenCurriculum.classList.contains("visible")) {
+        botonCurriculum.textContent = "Ocultar currículum";
+    } else {
+        botonCurriculum.textContent = "Ver currículum";
+    }
+
+});                 
 
 });
