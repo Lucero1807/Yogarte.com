@@ -5,12 +5,12 @@
 const botonMenu = document.getElementById("botonMenu");
 const menu = document.querySelector(".menu");
 
-botonMenu.addEventListener("click", function () {
+if(botonMenu && menu) {
+   botonMenu.addEventListener("click", function () {
+       menu.classList.toggle("activo");
 
-    menu.classList.toggle("activo");
-
-});
-
+   });
+}
 
 /* ==================================================
    CERRAR MENÚ AL HACER CLICK EN UN ENLACE
