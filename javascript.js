@@ -2,13 +2,16 @@
    MENÚ MÓVIL
 ================================================== */
 
-const botonMenu = document.getElementById("botonMenu");
-const menu = document.querySelector(".menu");
+});document.addEventListener("DOMContentLoaded", () => {
+    const botonMenu = document.getElementById("botonMenu");
+    // O si usas clases: const botonMenu = document.querySelector(".menu-movil");
+    const navMenu = document.querySelector("nav"); // Cambia esto por el selector de tu menú desplegable
 
-botonMenu.addEventListener("click", function () {
-
-    menu.classList.toggle("activo");
-
+    if (botonMenu) {
+        botonMenu.addEventListener("click", () => {
+            navMenu.classList.toggle("activo"); // Clase que muestra u oculta el menú en CSS
+        });
+    }
 });
 
 
@@ -125,24 +128,5 @@ elementos.forEach(function (elemento) {
         "opacity 0.6s ease, transform 0.6s ease";
 
     observador.observe(elemento);
-}
- /* ==================================================
-   MOSTRAR / OCULTAR CURRÍCULUM
-================================================== */
-
-const botonCurriculum = document.getElementById("botonCurriculum");
-const imagenCurriculum = document.getElementById("imagenCurriculum");
-
-botonCurriculum.addEventListener("click", function () {
-
-    imagenCurriculum.classList.toggle("visible");
-
-    if (imagenCurriculum.classList.contains("visible")) {
-        botonCurriculum.textContent = "Ocultar currículum";
-    } else {
-        botonCurriculum.textContent = "Ver currículum";
-    }
-
-});                 
 
 });
