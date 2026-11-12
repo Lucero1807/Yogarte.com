@@ -762,55 +762,70 @@ footer {
 
     .menu {
         display: none;
-
         position: absolute;
-
         top: 85px;
         left: 0;
-
         width: 100%;
-
         background: #eeeeee;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        max-height: calc(100vh - 85px);
+        overflow-y: auto;
+        z-index: 999;
     }
 
     .menu.activo {
-        display: block;
+        display: block !important;
     }
 
     .menu > ul {
         flex-direction: column;
-
         gap: 0;
+        padding: 0;
     }
 
     .menu > ul > li {
         width: 100%;
+        border-bottom: 1px solid #dcdcdc;
     }
 
     .menu a {
         padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
+    /* Submenús en móvil */
     .submenu {
         position: static;
-
         box-shadow: none;
-
         width: 100%;
+        background: #e2e2e2;
+        border-radius: 0;
+        display: none !important;
     }
 
+    /* Desactivar hover en móvil */
     .dropdown:hover .submenu {
         display: none !important;
+    }
+
+    /* Clase activa para abrir submenú al tocar */
+    .dropdown.abierto .submenu {
+        display: flex !important;
+    }
+
+    .submenu a {
+        padding-left: 40px;
     }
 
     .menu-movil {
         display: block;
     }
 
-
+    /* (Mantén aquí el resto de tus reglas responsive para .hero, .tarjetas, etc.) */
     .hero-contenido {
         flex-direction: column;
-
         text-align: center;
     }
 
@@ -827,71 +842,20 @@ footer {
         width: 160px;
     }
 
-
     .tarjetas,
     .obras-grid {
         grid-template-columns: 1fr;
     }
 
-
     .nosotros-contenido {
         grid-template-columns: 1fr;
     }
 
-
     .galeria-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
 
     .contacto-contenido {
         grid-template-columns: 1fr;
     }
-
-}
-
-
-@media (max-width: 500px) {
-
-    .seccion {
-        padding: 70px 5%;
-    }
-
-    .hero {
-        padding: 60px 5%;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .titulo-seccion h2 {
-        font-size: 35px;
-    }
-
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .redes {
-        grid-template-columns: 1fr;
-    }
-
-}
-.curriculum-imagen {
-    display: none;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-.curriculum-imagen.visible {
-    display: block;
-}
-
-#botonCurriculum {
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: inherit;
 }

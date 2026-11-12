@@ -1,132 +1,49 @@
 /* ==================================================
-   MENÚ MÓVIL
-================================================== */
-
-});document.addEventListener("DOMContentLoaded", () => {
+       MENÚ MÓVIL Y SUBMENÚS
+    ================================================== */
     const botonMenu = document.getElementById("botonMenu");
-    // O si usas clases: const botonMenu = document.querySelector(".menu-movil");
-    const navMenu = document.querySelector("nav"); // Cambia esto por el selector de tu menú desplegable
+    const menu = document.querySelector(".menu");
+    const dropdowns = document.querySelectorAll(".dropdown");
 
-    if (botonMenu) {
-        botonMenu.addEventListener("click", () => {
-            navMenu.classList.toggle("activo"); // Clase que muestra u oculta el menú en CSS
+    if (botonMenu && menu) {
+        botonMenu.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("activo");
         });
     }
-});
 
+    // Abrir/cerrar submenús al tocar en móvil
+    dropdowns.forEach(dropdown => {
+        const enlacePrincipal = dropdown.querySelector(":scope > a");
 
-/* ==================================================
-   CERRAR MENÚ AL HACER CLICK EN UN ENLACE
-================================================== */
-
-const enlacesMenu = document.querySelectorAll(".menu a");
-
-enlacesMenu.forEach(function (enlace) {
-
-    enlace.addEventListener("click", function () {
-
-        menu.classList.remove("activo");
-
+        if (enlacePrincipal) {
+            enlacePrincipal.addEventListener("click", (e) => {
+                if (window.innerWidth <= 900) {
+                    e.preventDefault(); // Evita que salte a la sección y cierre el menú
+                    dropdown.classList.toggle("abierto");
+                }
+            });
+        }
     });
 
-});
+    // Cerrar el menú solo al hacer clic en enlaces finales (no en los padres de submenú)
+    const enlacesMenu = document.querySelectorAll(".menu a");
 
+    enlacesMenu.forEach(enlace => {
+        enlace.addEventListener("click", () => {
+            const esPadreDropdown = enlace.parentElement.classList.contains("dropdown");
 
-/* ==================================================
-   FORMULARIO DE CONTACTO
-================================================== */
+            if (window.innerWidth <= 900 && !esPadreDropdown) {
+                menu.classList.remove("activo");
+                dropdowns.forEach(d => d.classList.remove("abierto"));
+            }
+        });
+    });
 
-const formulario =
-    document.getElementById("formularioContacto");
-
-
-formulario.addEventListener("submit", function (evento) {
-
-    evento.preventDefault();
-
-
-    const nombre =
-        document.getElementById("nombre").value;
-
-    const email =
-        document.getElementById("email").value;
-
-    const mensaje =
-        document.getElementById("mensaje").value;
-
-
-    if (
-        nombre === "" ||
-        email === "" ||
-        mensaje === ""
-    ) {
-
-        alert("Por favor, completa todos los campos.");
-
-        return;
-
-    }
-
-
-    alert(
-        "¡Gracias " +
-        nombre +
-        "! Tu mensaje fue preparado correctamente."
-    );
-
-
-    formulario.reset();
-
-});
-
-
-/* ==================================================
-   ANIMACIÓN AL HACER SCROLL
-================================================== */
-
-const elementos =
-    document.querySelectorAll(
-        ".tarjeta, .obras-grid article, .galeria-item"
-    );
-
-
-const observador =
-    new IntersectionObserver(
-
-        function (entradas) {
-
-            entradas.forEach(function (entrada) {
-
-                if (entrada.isIntersecting) {
-
-                    entrada.target.style.opacity = "1";
-
-                    entrada.target.style.transform =
-                        "translateY(0)";
-
-                }
-
-            });
-
-        },
-
-        {
-            threshold: 0.15
+    // Cerrar menú si se toca fuera del encabezado
+    document.addEventListener("click", (e) => {
+        if (menu && botonMenu && !menu.contains(e.target) && !botonMenu.contains(e.target)) {
+            menu.classList.remove("activo");
+            dropdowns.forEach(d => d.classList.remove("abierto"));
         }
-
-    );
-
-
-elementos.forEach(function (elemento) {
-
-    elemento.style.opacity = "0";
-
-    elemento.style.transform =
-        "translateY(30px)";
-
-    elemento.style.transition =
-        "opacity 0.6s ease, transform 0.6s ease";
-
-    observador.observe(elemento);
-
-});
+    });
